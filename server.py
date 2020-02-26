@@ -91,8 +91,10 @@ async def analyze(request):
     msk_np = image2np(msk_tensor)
     msk_pil = PIL.Image.frombytes("L", msk_np.shape, (msk_np * 255).astype(np.uint8))
     msk_pil = msk_pil.resize((img_pil.size[0], img_pil.size[1]), resample=PIL.Image.BILINEAR)
-    if img_pil.mode == 'RGB':
-        msk_pil = msk_pil.convert('RGB')
+    if img_pil.mode == 'P':
+        img_pil = img_pil.convert('L')
+    elif img_pil.mode != msk_pil.mode:
+        msk_pil = msk_pil.convert(img_pil.mode)
     blend = PIL.Image.blend(img_pil, msk_pil, 0.35)
     with io.BytesIO() as contenido:
         blend.save(contenido, format('JPEG'))

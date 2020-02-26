@@ -43,6 +43,7 @@ function analyze() {
             img.src = imageUrl;
         }
         el("analyze-button").innerHTML = "Analyze";
+        el("result-label").innerHTML = "Click on the image to cycle trought x-ray and the segmentation" ;
     };
 
     var fileData = new FormData();
@@ -52,20 +53,9 @@ function analyze() {
 
 
 function cycle_image() {
-    highlight();
+    aux=el("image-picked").src;
     el("image-picked").src = orig_img ;
+    orig_img=aux;
 }
 
-var buttonClicked = null;
 
-function highlight(element) {
-  if (buttonClicked != null) {
-      buttonClicked.style.background = "white";
-      buttonClicked.style.color = "black";
-  }
-  if (element != null) {
-      buttonClicked = element;
-      buttonClicked.style.background = "red";
-      buttonClicked.style.color = "white";
-  }
-}
