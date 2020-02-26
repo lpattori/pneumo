@@ -1,0 +1,6 @@
+*.pkl
+*.pth
+.gitignore
+Dockerfile
+Heroku-Docker
+README.md
