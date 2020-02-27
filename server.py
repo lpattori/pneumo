@@ -91,7 +91,7 @@ async def analyze(request):
     msk_np = image2np(msk_tensor)
     msk_pil = PIL.Image.frombytes("L", msk_np.shape, (msk_np * 255).astype(np.uint8))
     msk_pil = msk_pil.resize((img_pil.size[0], img_pil.size[1]), resample=PIL.Image.BILINEAR)
-    if img_pil.mode == 'P':
+    if img_pil.mode in ['P', 'RGBA']:
         img_pil = img_pil.convert('L')
     elif img_pil.mode != msk_pil.mode:
         msk_pil = msk_pil.convert(img_pil.mode)
