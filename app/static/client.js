@@ -43,7 +43,7 @@ function analyze() {
             img.src = imageUrl;
         }
         el("analyze-button").innerHTML = "Analyze";
-        el("result-label").innerHTML = "Click on the image to cycle trought x-ray and the segmentation" ;
+        el("result-label").innerHTML = "Click on the image to cycle through x-ray and the segmentation" ;
     };
 
     var fileData = new FormData();

@@ -90,7 +90,10 @@ async def analyze(request):
     mask, msk_tensor, dummy = global_learner.learner.predict(global_img)
     msk_np = image2np(msk_tensor)
     msk_pil = PIL.Image.frombytes("L", msk_np.shape, (msk_np * 255).astype(np.uint8))
-    msk_pil = msk_pil.resize((img_pil.size[0], img_pil.size[1]), resample=PIL.Image.BILINEAR)
+    min_msk = min(img_pil.size)
+    msk_pil = msk_pil.resize((min_msk, min_msk), resample=PIL.Image.BILINEAR)
+    if img_pil.size[0] != img_pil.size[1]: # it is not square so pad the mask
+        msk_pil = PIL.ImageOps.pad(msk_pil, img_pil.size)
     if img_pil.mode in ['P', 'RGBA']:
         img_pil = img_pil.convert('L')
     elif img_pil.mode != msk_pil.mode:
