@@ -15,7 +15,7 @@ Simply load a chest X ray image like
 
 and the result will be:
 
-![Thorax Segmentation](images/115_segemnt.PNG)
+![Thorax Segmentation](images/115_segemnt.png)
 
 This application can be found in: [Heroku](https://pneumot.herokuapp.com). You can test it with your own images!
 
