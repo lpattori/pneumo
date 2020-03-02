@@ -45,6 +45,12 @@ body {
     font-size: 15px;
 }
 
+.author {
+    margin-top: 0.5em;
+    padding: 10px;
+    font-size: 18px;
+}
+
 button.choose-file-button {
     width: 200px;
     height: 40px;
