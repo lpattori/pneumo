@@ -1,6 +1,8 @@
-#  Medical image classification with [fast.ai](https://www.fast.ai) on [Render](https://render.com)
+# Pneumothorax Segmentation
+#  Medical image classification with [fast.ai](https://www.fast.ai) on [Heroku](https://www.heroku.com)
 
-This repo is based in [fast.ai](https://github.com/render-examples/fastai-v3) model for Render.
+This repo is based in [fast.ai](https://github.com/render-examples/fastai-v3) model for Render and has been 
+adapted to be used on Heroku.
 
 The Deep Learning module has been trained with the 
 [SIIM-ACR Pneumothorax Segmentations](https://www.kaggle.com/vbookshelf/pneumothorax-chest-xray-images-and-masks)
