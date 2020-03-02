@@ -1,5 +1,5 @@
-# Pneumothorax Segmentation
-##  Medical image classification with 
+# AI Pneumothorax Segmentation
+##  Medical image classification with Deep Neural Networks
 
 ![Thorax X rays coolage](images/collage.jpg)
 
