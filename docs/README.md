@@ -8,8 +8,7 @@ The Deep Learning module has been trained with the
 [SIIM-ACR Pneumothorax Segmentations](https://www.kaggle.com/vbookshelf/pneumothorax-chest-xray-images-and-masks)
 from [kaggle](kaggle.com).
 
-This application can be found in: https://pneumot.herokuapp.com. You can test it with your own images!
-It has been modified to support heroku.
+This application can be found in: [Heroku](https://pneumot.herokuapp.com). You can test it with your own images!
 
 You can test locally installing Docker and using the command:
 
