@@ -6,13 +6,9 @@
 This application uses a Deep Neural network to identify Pneumothorax. The resulting image will have the 
 Pneumothorax hightlighted.
 
-Simply load a chest X ray image like
+Simply load a chest X ray image like                       and the result will be:
 
-![Thorax X ray](images/115_test_1_.png)
-
-and the result will be:
-
-![Thorax Segmentation](images/115_segemnt.png)
+![Thorax X ray](images/115_test_1_.png)             ![Thorax Segmentation](images/115_segemnt.png)
 
 This application can be found in: [Heroku](https://pneumot.herokuapp.com). You can test it with your own images!
 
