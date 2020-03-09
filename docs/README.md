@@ -13,7 +13,7 @@ Using an example X ray image           ----------->            and the result wi
 
 This application can be found in: [Heroku](https://pneumot.herokuapp.com). You can test it with your own images!
 
-The Deep Learning neural network module has been trained with the 
+The Deep Learning neural network module has been trained with images from the 
 [SIIM-ACR Pneumothorax Segmentations](https://www.kaggle.com/vbookshelf/pneumothorax-chest-xray-images-and-masks)
 from [kaggle](kaggle.com).
 The software used is [PyTorch](https://pytorch.org/) with [fast.ai](https://www.fast.ai).
