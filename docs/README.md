@@ -3,11 +3,11 @@
 
 ![Thorax X rays collage](images/collage.jpg)
 
-This application uses a Deep Neural network to identify Pneumothorax. 
+This application uses a Deep Neural network to identify Pneumothorax.
 It takes an Thorax x-ray as input, the resulting image will have the 
 Pneumothorax zones hightlighted.
 
-Using an example X ray image           --------->            and the result will be:
+Using an example X ray image           ----------->            and the result will be:
 
 ![Thorax X ray](images/115_test_1_.png)     ------>        ![Thorax Segmentation](images/115_segemnt.png)
 
