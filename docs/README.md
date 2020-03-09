@@ -6,7 +6,7 @@
 This application uses a Deep Neural network to identify Pneumothorax. The resulting image will have the 
 Pneumothorax hightlighted.
 
-Simply load a chest X ray image           --------->            and the result will be:
+Simply load a chest X ray image           ------------->            and the result will be:
 
 ![Thorax X ray](images/115_test_1_.png)     ------>        ![Thorax Segmentation](images/115_segemnt.png)
 
